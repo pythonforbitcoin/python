@@ -22,3 +22,27 @@ companyAddress = raw_input("请输入您的办公地址")
 print("您的办公地址是%s"%companyAddress)
 print("您的姓名：%s"%userName)
 print("您的手机号码是：%s"%phoneNumber)
+算数的时候只有小括号哦，没有其他的
+3**4幂此
+money += 100
+赋值运算符的优先级别是最低的 a *= 3+4-6  = a *1
+
+
+#提示并获取1个数字
+a = raw_input("输入一个数字")
+#提示并获取另一个数字
+b = raw_input("输入另外一个数字")
+#求和
+c = int(a)+int(b)
+#输出结果5
+print("%s +%s = %d"%(a,b,c))
+
+age = 11
+if age > 18:
+    print("nin ky shang wangba wan")
+else:
+    print("guonijiAN ZAILAI BA")
+print("----------------")
+
+#python 格式特别重要
+
