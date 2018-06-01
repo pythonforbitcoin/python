@@ -2,3 +2,23 @@
 '''    "'''''
 #coding=utf-8解释中文
 #第一次的叫做定义变量，第二次的叫做修改变量
+int long float complex
+字母数字下划线组成，但是不能数字开头，标识符
+驼峰法命名，myBikeBest
+关键字系统说明问题
+\n换行\t table 
+#格式话输出数字更换
+age = 10
+high =170
+print("我今年age岁")
+age = 11
+print("我今年%d岁,我的身高是%dcm"%(age,high))
+asc码是指A65，每一个字符都有对应的数值存储
+print命令函数自带换行，如果不想换行，加上 《,end = ""
+userName = raw_input("请输入你的姓名")
+phoneNumber = raw_input("请输入您的手机号码")
+
+companyAddress = raw_input("请输入您的办公地址")
+print("您的办公地址是%s"%companyAddress)
+print("您的姓名：%s"%userName)
+print("您的手机号码是：%s"%phoneNumber)
