@@ -46,3 +46,22 @@ print("----------------")
 
 #python 格式特别重要
 
+
+闯红灯判断
+#请输入你的当前分数
+a = raw_input("请输入您当前的分数")
+score = int(a)
+#请输入你违法交通规则的序号(1:闯红灯2：违章停车
+b = raw_input("请输入你违反交通规则的序号")
+chengfa = int(b)
+#扣分
+if chengfa == 1:
+    score -= 6
+if chengfa == 2:
+    score -= 3
+
+
+#显示当前的分数，以及显示是否参见学习
+print("当前显示的分数是%d"%score)12
+
+
