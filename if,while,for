@@ -48,3 +48,5 @@ elif not(num<1 or num >7):
     print("今天是星期%d"%num)
 else:
     print("您输入的数字有错误")
+
+#同一个if elif 在一列
