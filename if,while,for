@@ -1,0 +1,50 @@
+#提示并获取用户名
+userName = raw_input("请输入用户名")
+#提示并获取密码
+password = raw_input("请输入密码")
+#判断用户名和密码全部相等
+if userName = "lizhiqiang" and password == "12345":
+#根据判断结果显示信息
+  print("恭喜%s登陆系统成功"%userName）
+if判断条件的时候如果是一起运算的话就要用逻辑运算符
+
+
+num = raw_input("请您猜一个数字0-9，猜对有奖励哦就")
+if num == "2":
+    print("恭喜你的答对了")
+else:
+    print("对不起，你答错了了")
+2
+人人都喜欢白富美
+color = str(raw_input("你白么？"))
+rich = str(raw_input("你富有么？"))
+beauty = str(raw_input("你美丽么？"))
+if color == "white" and rich == "rich" and beauty == "beauty":
+    print("I love U")
+
+总结，if 条件满足：
+
+
+if 条件1：
+条件1满足做事a
+elif 条件2：
+条件2满足做事a
+elif 条件3：
+条件3满足做事情a
+
+了解度测试
+birth = int(raw_input("哥哥的生日是哪天？1.5月9日 2.10月24日"))
+food = int(raw_input("哥哥最喜欢吃什么食物？1.土豆 2.地瓜"))
+beer = int(raw_input("哥哥最喜欢喝哪个啤酒？1.青岛 2.雪花"))
+if birth == 2 and food == 1 and beer == 2:
+    print("你很了解哥哥呀 哥哥很高兴 奖励今天和你玩 love U 哈哈！")
+
+
+#判断是星期几
+num = int(raw_input("你输入1到7的数字我就告诉你今天是星期几"))
+if num ==7:
+    print("今天是星期天")
+elif not(num<1 or num >7):
+    print("今天是星期%d"%num)
+else:
+    print("您输入的数字有错误")
