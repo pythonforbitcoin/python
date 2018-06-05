@@ -1,1 +1,46 @@
+#求一百以内的偶数
+i=1
+while i<=100:
+  if i%2==0:
+    print(i)
+  i+=1
+  
+  
+i=1
+sum=0
+while i<=100:
+    sum=sum+i
+    i+=1
+print("1到100的和是%d"%sum)
 
+#求1到100的偶数和
+i=1
+sum=0
+while i<=100:
+    if i%2==0:
+        sum=sum+i
+    i+=1       
+print("1到100的和是%d"%sum)
+
+
+#打一排星星
+i=1
+while i<=5:
+    j=1
+    while j<=i:
+        print("*"),
+        j+=1
+    print("")
+    i+=1
+  #99乘法表啊 -2d表示占位靠左边对齐，2d表示站两位右对齐
+i=1
+while i<=9:
+    j=1
+    while j<=i:
+        print("%d*%d=%-2d "%(j,i,i*j) ),
+        j+=1
+    print("")
+    i+=1
+        
+        
+  
