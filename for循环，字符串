@@ -1,0 +1,19 @@
+#for 可以遍历取值，
+name = "abcde"
+for temp in name:
+    print(temp)
+    
+name = "abcde"
+i=0
+while i<5:
+    print(name[i])
+    i+=1
+#切片[0:4]包含0，1，2，3的存储的信息
+#name[0:])
+#name([:])
+#name([::3])
+#name([::-1])把字符串反过来，字符串逆序
+name = "I123lasdoxczvwdseszsu"
+a = name[::4]
+print a
+#这个的结果是Iloveu
