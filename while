@@ -44,3 +44,27 @@ while i<=9:
 
   break 结束当前所有循环
   continue 结束当前循环中的当次循环，并执行当前循环的下一个条件
+  
+  
+  #猜拳游戏
+
+import random
+#提示用户并获取一个数字
+while True:
+    player = int(raw_input("请选择你的类型0.剪刀1.石头.2布请输入9退出"))
+    #让电脑产生一个数字
+    computer = random.randint(0,2)
+    print("computer------->%d"%computer)
+
+
+    #判断输赢并显示结果
+    if player == computer:
+        print("平局")
+    elif (player ==1 and computer ==0)or(player ==2 and computer ==1) or(player ==0 and computer ==2):
+        print("你赢了")
+    elif player ==9:
+        break
+    else:
+        print("你输了")
+
+
