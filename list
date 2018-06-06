@@ -32,3 +32,36 @@ if insertName in names:
   print("找到了")
  else：
   print("没找到")
+  #先进先出的叫队列，先进后出的叫队列
+  
+#del name[]根据位置删除
+#pop 删除最后一个names.pop
+#names.remove("字符值")
+
+
+#花名册管理
+#打印提示
+print("*"*30)
+print("欢迎来到v41系统")
+print("1添加一个名字")
+print("2删除一个名字")
+print("3修改一个名字")
+print("4查询一个名字")
+print("0推出系统")
+print("遍历所有名字")
+print("*"*30)
+
+#获取要操作的数字
+key = raw_input("请输入数字")
+names=[]
+
+#根据选择做相应的事情
+if key =="1":
+  name = raw_input("输入一个新名字")
+  a.extend(name)
+ elif:
+ elif:
+ elif:
+ elif key =="5":
+ elif:
+  
