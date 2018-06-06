@@ -1,0 +1,34 @@
+# 列表循环
+#从头到尾打印一遍叫遍历
+namelist = [1,2,3,4,5]
+for tem in namelist:
+  print tem
+
+i = 0
+while i<len(infos):
+  print(infos[i])
+  i+=1
+  
+  #找到列表中的某一个数字
+  while True:
+    nameList =["xiaoming","xiaozhang","xiaoli"]
+    name = raw_input("请输入你的名字查询是否在列表")
+    m =0
+    for n in nameList:
+        if n== name:
+            m=1
+    if m==1:
+        print("找到了")
+    else:
+        print("meizhaodao1")
+
+#append添加到列表最后
+#insert 位置加上内容，
+#extend 链接
+#取值name[][]去莫一个元素中的某一个元素
+#修改直接用 列表名【位置】就可以改
+
+if insertName in names:
+  print("找到了")
+ else：
+  print("没找到")
