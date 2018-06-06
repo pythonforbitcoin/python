@@ -58,10 +58,52 @@ names=[]
 #根据选择做相应的事情
 if key =="1":
   name = raw_input("输入一个新名字")
-  a.extend(name)
- elif:
+  names.extend(name)
+ elif key =="2":
+  
  elif:
  elif:
  elif key =="5":
  elif:
   
+  
+  
+  # -*- coding:utf-8 -*-
+while True:
+        #花名册管理
+    #打印提示
+    print("*"*30)
+    print("欢迎来到v41系统")
+    print("1添加一个名字")
+    print("2删除一个名字")
+    print("3修改一个名字")
+    print("4查询一个名字")
+    print("0推出系统")
+    print("5遍历所有名字")
+    print("*"*30)
+
+    #获取要操作的数字
+    key = raw_input("请输入数字")
+    names=[]
+
+    #根据选择做相应的事情
+    if key =="1":
+      name1 = raw_input("输入一个新名字")
+      names.extend(name1)
+    elif key =="2":
+         name2 = raw_input("请输入要删除的单词")
+         names.remove(name2)
+    #elif key ==3:
+         
+    elif key ==4:
+         name4 =raw_input("请输入一个你要查询的名字")
+         if name4 in names:
+             print("%s在这个列表里"%name4)
+        
+    elif key =="5":
+        for name5 in names:
+            print(name5)
+        
+    elif key =="0":
+        print("推出系统")
+        break
