@@ -107,3 +107,5 @@ while True:
     elif key =="0":
         print("推出系统")
         break
+        
+    #keys调用字典里的大项目名， values选择项目历的值，items单词条显示
