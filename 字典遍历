@@ -1,0 +1,116 @@
+#列表是根据下标找某个元素的，字典就可以根据单个元素的名找，或者根据元素的值找到某一个元组，测试的时候if：后边要有对应的结果，如果没有的话，添加上pass#
+#这样程序就不会报错了，增加以及修改
+stuInfos = []
+while True:
+    #提示用户想实现的功能
+    print("*"*40)
+    print("学生管理系统")
+    print("1.添加学生信息")
+    print("2.删除学生信息")
+    print("3.更改学生信息")
+    print("4.查询学生信息")
+    print("5.显示全部学生信息")
+    print("0.退出系统")
+    print("*"*40)
+    #获取用户选择
+    key = input("请您输入功能对应的数字")
+    
+     #实现用户的功能
+    if key =="1":
+        #添加学生信息
+        newName = input("请您输入学生的名字：")
+        newSex = input("亲您输入学生的性别：")
+        newPhone = input("请您输入学生的电话：")
+        newInfo ={}
+        newInfo["name"] = newName
+        newInfo["sex"] = newSex
+        newInfo["phone"] = newPhone
+        stuInfos.append(newInfo)
+    elif key =="3":
+        #修改学生信息
+        #1提示并获取需要修改的学生序号
+        stuId = int(input("请您输入学生的序号："))
+        #2重新输入学生的信息
+        newName = input("请您输入学生的名字：")
+        newSex = input("亲您输入学生的性别：")
+        newPhone = input("请您输入学生的电话：")
+        stuInfos[stuId-1]["name"]=newName
+        stuInfos[stuId-1]["sex"]=newSex
+        stuInfos[stuId-1]["phone"]=newPhone
+    elif key == "5":
+        print("*"*30)
+        print("学生信息如下")
+        print("*"*39)
+        print("序号 姓名 性别 手机号码")
+        i=1
+        for tempInfo in stuInfos:
+           
+            print("%d    %s   %s    %s"%(i,tempInfo["name"],tempInfo["sex"],tempInfo["phone"]))
+            #这个是循环字典里的键的内容
+            i+=1
+            
+     stuInfos = []
+while True:
+    #提示用户想实现的功能
+    print("*"*40)
+    print("学生管理系统")
+    print("1.添加学生信息")
+    print("2.删除学生信息")
+    print("3.更改学生信息")
+    print("4.查询学生信息")
+    print("5.显示全部学生信息")
+    print("0.退出系统")
+    print("*"*40)
+    #获取用户选择
+    key = input("请您输入功能对应的数字")
+    
+     #实现用户的功能
+    if key =="1":
+        #添加学生信息
+        newName = input("请您输入学生的名字：")
+        newSex = input("亲您输入学生的性别：")
+        newPhone = input("请您输入学生的电话：")
+        newInfo ={}
+        newInfo["name"] = newName
+        newInfo["sex"] = newSex
+        newInfo["phone"] = newPhone
+        stuInfos.append(newInfo)
+    elif key =="2":
+         #1提示并获取需要修改的学生序号
+        stuId = int(input("请您输入学生的序号："))
+        #删除某个序号的学生
+        del stuInfos[stuId-1]
+        
+    elif key =="3":
+        #修改学生信息
+        #1提示并获取需要修改的学生序号
+        stuId = int(input("请您输入学生的序号："))
+        #2重新输入学生的信息
+        newName = input("请您输入学生的名字：")
+        newSex = input("亲您输入学生的性别：")
+        newPhone = input("请您输入学生的电话：")
+        stuInfos[stuId-1]["name"]=newName
+        stuInfos[stuId-1]["sex"]=newSex
+        stuInfos[stuId-1]["phone"]=newPhone
+    elif key =="4":
+         findName = input('请输入要查找的姓名:')
+         #查找是否存在
+         if findName in stuInfos[newName]:
+                print('在字典中找到了相同的名字')
+         else:
+            print('没有找到')
+    elif key == "5":
+        print("*"*30)
+        print("学生信息如下")
+        print("*"*39)
+        print("序号 姓名 性别 手机号码")
+        i=1
+        for tempInfo in stuInfos:
+           
+            print("%d    %s   %s    %s"%(i,tempInfo["name"],tempInfo["sex"],tempInfo["phone"]))
+            #这个是循环字典里的键的内容
+            i+=1
+            
+            
+              
+            
