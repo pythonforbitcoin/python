@@ -19,4 +19,35 @@ def printLine(n):
             i += 1
 num = int(input("请输入您要打印几条线；"))
 printLine(num)
-                  
+
+
+#求三个数的和
+def sum(l,m,n):
+    sum = l + m +n
+    print("这三个数相加的和是%d"%sum)
+a = int(input("请输入一个数字"))
+b = int(input("请输入一个数字"))
+c = int(input("请输入一个数字"))
+
+sum(a,b,c)
+
+
+#求三个数的和
+def summ(l,m,n):
+    summ = l + m +n
+    return summ
+#求三个数的平均和
+def ave(l,m,n):
+    su = summ(l,m,n)
+    ave = su/3
+    return ave
+    
+a = int(input("请输入一个数字"))
+b = int(input("请输入一个数字"))
+c = int(input("请输入一个数字"))
+
+
+summ(a,b,c)
+print("这三个数相加的和是%d"%summ(a,b,c))
+ave(a,b,c)
+print("这三个数的平均值%d"%ave(a,b,c))                  
